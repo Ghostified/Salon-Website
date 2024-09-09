@@ -83,7 +83,25 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
-  
+}
+.section_title{
+  margin: 0 auto ;
+  text-align: center;
+
+}
+.section_title h1{
+  font-family: var(--font-cursive);
+  font-size: var(--big-font-size);
+  font-weight: var(--font-medium);
+  line-height: var(--big-font-size);
+  color: var(--first-color);
+
+}
+.section_title span{
+  font-weight: var(--font-light);
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-font-size);
+  color: var(--black-color);
 }
 /*--- BUTTON --*/
 .btn{
@@ -259,4 +277,47 @@ a{
   letter-spacing: 0.2em;
   color: var(--black-color);
   margin-bottom: var(--mb-1-5);
+}
+/*--- ABOUT--*/
+.about{
+  width: 100%;
+  background-image: url(../img/arabesco-left-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  z-index: var(--z_negative);
+}
+.about_detail{
+  width: 100%;
+  padding: 2 rem;
+}
+.about_detail_content{
+  border: 2px solid var(--first-color);
+  border-radius: 30px;
+  padding: 1rem;
+}
+.about_img img{
+  width: 100%;
+  border-radius: 30px;
+  filter: drop-shadow(16px 16px 16px rgba(0, 0, 0, 0.25));
+}
+.about_description{
+  position: relative;
+  padding: 2rem;
+}
+.about_description::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  top: -10%;
+  left: 0;
+  background: var(--main-color);
+  border-radius: 30px;
+  box-shadow: 4px 8px 16px rgba(0,0,0,0.25);
+  z-index: var(--z_negative);
+}
+.about_description p{
+  font-family: var(--font-medium);
+  line-height: calc(var(--normal-font-size) + 12px);
+  color: var(--black-color);
 }
