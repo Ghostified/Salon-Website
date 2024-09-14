@@ -379,4 +379,15 @@ transition: all 0.8s ease;
   width: 100%;
   height: 100%;
 }
-/*--- SERVICES--*/
+/*--- PACKAGES--*/
+.package{
+  width: 100%;
+  background-color: var(--main-color);
+  border-radius: 0 300px;
+}
+.package_cards{
+  margin-top: var(--mb-2-5);
+}
+.cards{
+  height: 360px;
+}
