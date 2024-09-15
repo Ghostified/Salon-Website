@@ -401,6 +401,44 @@ transition: all 0.8s ease;
   transform: scale(1.1);
 }
 .card title{
-  text-align: center;
   margin-bottom: var(--mb-1-5);
+  text-align: center;
+}
+.card_title h1{
+  font-weight: var(--font-bold);
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-font-size);
+  color: var(--black-color);
+  text-align: center; /*-- haha--*/
+}
+.card_items{
+  margin-bottom: var(--mb-1);
+}
+.item{
+  display: flex;
+  align-items: center;
+}
+.item p{
+  font-weight: var(--font-bold);
+  line-height: calc(var(--normal-font-size) + 10px);
+  color: var(--first-color);
+  margin-left: var(--mb-05);
+}
+.item p span{
+  font-size: var(--small-font-size);
+  font-weight: var(--font-light);
+}
+.item .x_icon , .item .check_icon{
+  font-size: var(--h3-font-size);
+}
+.item .check_icon{
+  color: var(--first-color);
+}
+.item .x_icon, .item .not{
+  color: var(--second-color);
+}
+.card_items button{
+  margin: 0 auto;
+  margin-top: var(--mb-1);
+
 }
