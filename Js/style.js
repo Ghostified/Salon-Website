@@ -40,3 +40,12 @@ function colorLink() {
 }
 //add an event listener to all the '.nav-link'  elements
 linkColor.forEach(L => L.addEventListener('click', colorLink))
+
+//function to change the color of the header
+function scrollHeader(){
+  const scrollHeader = document.getElementById('header')
+  if (this.scrollY >= 100) scrollHeader.classList.add('scroll-header');
+    else scrollHeader.classList.remove('scroll-header')
+
+}
+window.addEventListener('scroll', scrollHeader)
